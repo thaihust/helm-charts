@@ -46,7 +46,7 @@ spec:
         - name: POSTGRES_DB
           value: {{ default "" .Values.postgresDatabase | quote }}
         - name: PGDATA
-          value: /var/lib/postgresql/data/pgdata
+          value: /var/lib/postgresql/data/pgdata/db
         - name: POSTGRES_PASSWORD
           valueFrom:
             secretKeyRef:
