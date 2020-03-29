@@ -17,6 +17,7 @@ spec:
     metadata:
       labels:
         app: {{ template "fullname" . }}
+        release: {{ .Release.Name }}
     spec:
       containers:
       - name: {{ template "fullname" . }}
