@@ -1,5 +1,5 @@
 ## Confluence
-image: seibertmedia/atlassian-confluence:5.10.8
+image: thaihust/confluence:7.3.4
 imagePullPolicy: IfNotPresent
 
 serviceType: LoadBalancer
