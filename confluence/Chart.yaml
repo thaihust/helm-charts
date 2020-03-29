@@ -1,10 +1,12 @@
+apiVersion: v1
+version: 0.1.0
+appVersion: 7.3.4
 description: Atlassian Confluence
 keywords:
 - wiki
 maintainers:
-- email: docker@seibert-media.net
-  name: //SEIBERT/MEDIA GmbH
+- email: thaiph.hust@gmail.com
+  name: Thai Pham
 name: confluence
 sources:
-- https://hub.docker.com/r/seibertmedia/atlassian-confluence/
-version: 5.10.8
+- https://hub.docker.com/r/thaihust/confluence/
