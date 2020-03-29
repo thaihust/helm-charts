@@ -19,6 +19,10 @@ spec:
         app: {{ template "fullname" . }}
         release: {{ .Release.Name }}
     spec:
+      hostAliases:
+      - ip: "127.0.0.1"
+        hostnames:
+        - "{{ .Values.ingressDomain }}"
       containers:
       - name: {{ template "fullname" . }}
         image: {{ .Values.image }}
