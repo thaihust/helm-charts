@@ -1,9 +1,8 @@
-## Confluence
 image: thaihust/confluence:7.3.4
 imagePullPolicy: IfNotPresent
 
 serviceType: LoadBalancer
-ingressDomain: wiki.example.com
+ingressDomain: confluence.fago-labs.club
 
 maxMemoryJVM: 1G
 
@@ -17,7 +16,7 @@ resources:
 
 persistence:
   enabled: true
-  size: 20Gi
+  size: 15Gi
   accessMode: ReadWriteOnce
 
 postgresql:
